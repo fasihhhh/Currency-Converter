@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="h2">
+        <h2>𝓒𝓾𝓻𝓻𝓮𝓷𝓬𝔂 𝓒𝓸𝓷𝓿𝓮𝓻𝓽𝓮𝓻</h2>
+
+      </div>
+      <main>
+        <div class="currency-enter">
+          <div class="user-enter">
+            <input type="number" id="user-inputbox" placeholder="Enter Amount" />
+            <select id="user-currency-choice">
+              <option>Select Currency</option>
+              <option value="aed">Dirham (UAE)</option>
+              <option value="afn">Afghani (Afghanistan)</option>
+              <option value="all">Lek (Albania)</option>
+              <option value="amd">Dram (Armenia)</option>
+              <option value="ang">Guilder (Netherlands Antilles)</option>
+              <option value="aoa">Kwanza (Angola)</option>
+              <option value="ars">Peso (Argentina)</option>
+              <option value="aud">Dollar (Australia)</option>
+              <option value="awg">Florin (Aruba)</option>
+              <option value="azn">Manat (Azerbaijan)</option>
+              <option value="bam">Mark (Bosnia and Herzegovina)</option>
+              <option value="bbd">Dollar (Barbados)</option>
+              <option value="bdt">Taka (Bangladesh)</option>
+              <option value="bgn">Lev (Bulgaria)</option>
+              <option value="bhd">Dinar (Bahrain)</option>
+              <option value="bif">Franc (Burundi)</option>
+              <option value="bmd">Dollar (Bermuda)</option>
+              <option value="bnd">Dollar (Brunei)</option>
+              <option value="bob">Boliviano (Bolivia)</option>
+              <option value="brl">Real (Brazil)</option>
+              <option value="bsd">Dollar (Bahamas)</option>
+              <option value="btn">Ngultrum (Bhutan)</option>
+              <option value="bwp">Pula (Botswana)</option>
+              <option value="byn">Ruble (Belarus)</option>
+              <option value="bzd">Dollar (Belize)</option>
+              <option value="cad">Dollar (Canada)</option>
+              <option value="chf">Franc (Switzerland)</option>
+              <option value="cny">Yuan (China)</option>
+              <option value="cop">Peso (Colombia)</option>
+              <option value="czk">Koruna (Czech Republic)</option>
+              <option value="dkk">Krone (Denmark)</option>
+              <option value="dop">Peso (Dominican Republic)</option>
+              <option value="dzd">Dinar (Algeria)</option>
+              <option value="egp">Pound (Egypt)</option>
+              <option value="eur">Euro (European Union)</option>
+              <option value="gbp">Pounds (United Kingdom)</option>
+              <option value="hkd">Dollar (Hong Kong)</option>
+              <option value="idr">Rupiah (Indonesia)</option>
+              <option value="ils">Shekel (Israel)</option>
+              <option value="inr">Rupee (India)</option>
+              <option value="iqd">Dinar (Iraq)</option>
+              <option value="jpy">Yen (Japan)</option>
+              <option value="kes">Shilling (Kenya)</option>
+              <option value="krw">Won (South Korea)</option>
+              <option value="kwd">Dinar (Kuwait)</option>
+              <option value="lbp">Pound (Lebanon)</option>
+              <option value="lkr">Rupee (Sri Lanka)</option>
+              <option value="mad">Dirham (Morocco)</option>
+              <option value="myr">Ringgit (Malaysia)</option>
+              <option value="ngn">Naira (Nigeria)</option>
+              <option value="npr">Rupee (Nepal)</option>
+              <option value="nzd">Dollar (New Zealand)</option>
+              <option value="omr">Rial (Oman)</option>
+              <option value="pkr">PKR (Pakistan)</option>
+              <option value="qar">Riyal (Qatar)</option>
+              <option value="rub">Ruble (Russia)</option>
+              <option value="sar">Riyal (Saudi Arabia)</option>
+              <option value="sek">Krona (Sweden)</option>
+              <option value="sgd">Dollar (Singapore)</option>
+              <option value="thb">Baht (Thailand)</option>
+              <option value="try">Lira (Turkey)</option>
+              <option value="usd">Dollar (United States)</option>
+              <option value="vnd">Dong (Vietnam)</option>
+              <option value="zar">Rand (South Africa)</option>
+            </select>
+          </div>
+          <!-- <div class="arrows"> -->
+          <p><strong>⇀</strong></p>
+          <!-- <p><strong>⇁</strong></p> -->
+          <!-- </div> -->
+          <!-- ⇁ -->
+
+          <div class="converted-answer">
+            <div class="display"></div>
+             <!-- <input type="text" id="converted-inputbox" value=""> -->
+            <select id="converted-currency-choice">
+              <option>Select Currency</option>
+              <option value="aed">Dirham (UAE)</option>
+              <option value="afn">Afghani (Afghanistan)</option>
+              <option value="all">Lek (Albania)</option>
+              <option value="amd">Dram (Armenia)</option>
+              <option value="ang">Guilder (Netherlands Antilles)</option>
+              <option value="aoa">Kwanza (Angola)</option>
+              <option value="ars">Peso (Argentina)</option>
+              <option value="aud">Dollar (Australia)</option>
+              <option value="awg">Florin (Aruba)</option>
+              <option value="azn">Manat (Azerbaijan)</option>
+              <option value="bam">Mark (Bosnia and Herzegovina)</option>
+              <option value="bbd">Dollar (Barbados)</option>
+              <option value="bdt">Taka (Bangladesh)</option>
+              <option value="bgn">Lev (Bulgaria)</option>
+              <option value="bhd">Dinar (Bahrain)</option>
+              <option value="bif">Franc (Burundi)</option>
+              <option value="bmd">Dollar (Bermuda)</option>
+              <option value="bnd">Dollar (Brunei)</option>
+              <option value="bob">Boliviano (Bolivia)</option>
+              <option value="brl">Real (Brazil)</option>
+              <option value="bsd">Dollar (Bahamas)</option>
+              <option value="btn">Ngultrum (Bhutan)</option>
+              <option value="bwp">Pula (Botswana)</option>
+              <option value="byn">Ruble (Belarus)</option>
+              <option value="bzd">Dollar (Belize)</option>
+              <option value="cad">Dollar (Canada)</option>
+              <option value="chf">Franc (Switzerland)</option>
+              <option value="cny">Yuan (China)</option>
+              <option value="cop">Peso (Colombia)</option>
+              <option value="czk">Koruna (Czech Republic)</option>
+              <option value="dkk">Krone (Denmark)</option>
+              <option value="dop">Peso (Dominican Republic)</option>
+              <option value="dzd">Dinar (Algeria)</option>
+              <option value="egp">Pound (Egypt)</option>
+              <option value="eur">Euro (European Union)</option>
+              <option value="gbp">Pounds (United Kingdom)</option>
+              <option value="hkd">Dollar (Hong Kong)</option>
+              <option value="idr">Rupiah (Indonesia)</option>
+              <option value="ils">Shekel (Israel)</option>
+              <option value="inr">Rupee (India)</option>
+              <option value="iqd">Dinar (Iraq)</option>
+              <option value="jpy">Yen (Japan)</option>
+              <option value="kes">Shilling (Kenya)</option>
+              <option value="krw">Won (South Korea)</option>
+              <option value="kwd">Dinar (Kuwait)</option>
+              <option value="lbp">Pound (Lebanon)</option>
+              <option value="lkr">Rupee (Sri Lanka)</option>
+              <option value="mad">Dirham (Morocco)</option>
+              <option value="myr">Ringgit (Malaysia)</option>
+              <option value="ngn">Naira (Nigeria)</option>
+              <option value="npr">Rupee (Nepal)</option>
+              <option value="nzd">Dollar (New Zealand)</option>
+              <option value="omr">Rial (Oman)</option>
+              <option value="pkr">PKR (Pakistan)</option>
+              <option value="qar">Riyal (Qatar)</option>
+              <option value="rub">Ruble (Russia)</option>
+              <option value="sar">Riyal (Saudi Arabia)</option>
+              <option value="sek">Krona (Sweden)</option>
+              <option value="sgd">Dollar (Singapore)</option>
+              <option value="thb">Baht (Thailand)</option>
+              <option value="try">Lira (Turkey)</option>
+              <option value="usd">Dollar (United States)</option>
+              <option value="vnd">Dong (Vietnam)</option>
+              <option value="zar">Rand (South Africa)</option>
+            </select>
+          </div>
+        </div>
+        <div class="per-rate">
+        </div>
+        <div class="time-stamp">
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
